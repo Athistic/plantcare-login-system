@@ -1,0 +1,93 @@
+label{
+	display:inline-block;
+	width:100px;
+	margin:10px;
+}
+
+.fix{
+	clear: both;
+	overflow: hidden;
+}
+
+header{
+	overflow: hidden;
+	height: 100vh;
+}
+
+.nav-area{
+	background: rgba(0,0,0,0.7);
+	height: 60px;
+	position: absolute;
+	width: 100%;
+}
+
+.logo{
+	margin: 0 50px;
+	height: 60px;
+	float: left;
+	color: #fff;
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.logo span{
+	color: Green;
+	
+}
+
+.menu-area{
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+
+.menu-area li{
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.menu-area li a{
+	text-decoration: none;
+	color: Grey;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+
+.menu-area li.active a{
+	color: Green;
+}
+
+.menu-area li a:hover{
+	color: Green;
+}
+
+h1{
+	color: Green;
+}
+
+h1 span{
+	color: Green;
+}
+
+label{
+	color: Green;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input{
+	background-color: Green;
+	color: white;
+}
+
+select{
+	background-color: Green;
+	color: white;
+}
+
+placeholder{
+	color: white;
+}
+

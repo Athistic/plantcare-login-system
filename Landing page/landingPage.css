@@ -1,0 +1,65 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 70%;
+  margin-top: 35px;
+  margin-left: 90px;
+  margin-right: 100px;
+  font-family: Arial;
+}
+
+.heading h3{
+	color: Gray;
+	font-size: 55px;
+	margin: 0;
+	text-align: center;
+	
+}
+
+.heading h3 span{
+	color: Green;
+}
+
+h2{
+	text-align: center;
+	color: White;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-style: bold;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: grey;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.button{
+	width: 98.5%;
+	height: 3em;
+	position: relative;
+	cursor: pointer;
+	top: 11px;
+	background-color: Green;
+	border: none;
+	color: rgb(255,255,2555);
+}
+

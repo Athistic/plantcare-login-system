@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: san-serif;
+}
+
+.fix{
+	clear: both;
+	overflow: hidden;
+}
+
+header{
+	overflow: hidden;
+	height: 100vh;
+}
+
+.nav-area{
+	background: rgba(0,0,0,0.7);
+	height: 60px;
+	position: absolute;
+	width: 100%;
+}
+
+.logo{
+	margin: 0 50px;
+	height: 60px;
+	float: left;
+	color: #fff;
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.logo span{
+	color: Green;	
+}
+
+.menu-area{
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+
+.menu-area li{
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.menu-area li a{
+	text-decoration: none;
+	color: Grey;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+
+.menu-area li.active a{
+	color: Green;
+}
+
+.menu-area li a:hover{
+	color: Green;
+}
+
+.contact-form{
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+	margin: 50px auto;
+	width: 350px;
+	text-align: center;
+}
+
+.contact-form h2{
+	background: #efefef;
+	margin-top: 0;
+	padding: 10px;
+}
+
+.contact-form input{
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.contact-form textarea{
+	width: 90%;
+	margin: 5px auto;
+	padding: 10px;
+	height: 80%;
+}
+
+.submit-btn{
+	cursor: pointer;
+	width: 150px !important;
+	margin-left: 18px !important;
+}
+
+.status{
+	font-size: 15px;
+	color: green;
+	padding: 15px;
+}

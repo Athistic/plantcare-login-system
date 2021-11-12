@@ -1,0 +1,1 @@
+CREATE TABLE `db_app`.`journey` ( `username` INT(10) NOT NULL , `age` INT(50) NOT NULL , `choice` VARCHAR(50) NOT NULL , `month` INT(50) NOT NULL , `days` INT(50) NOT NULL , `year` INT(50) NOT NULL , `vegtype` VARCHAR(50) NOT NULL , `time` TIMESTAMP(6) NOT NULL , PRIMARY KEY (`username`)) ENGINE = InnoDB;
