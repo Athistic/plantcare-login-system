@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale=1.0">
+	<link rel="icon" type="jpeg/png" href="Images/logo.png">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	
+	<title> Landing Page </title>
+
+	<link rel="stylesheet" href="CSS/landingPage.css">
+</head>
+
+
+<body>
+	<div class="heading">
+	<h3>WEL<span>COME</span></h3>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="MyClockDisplay" class="clock"></div>
+	<script type="text/javascript">
+		function showTime(){
+			var date =new Date();
+			var h = date.getHours();
+			var m = date.getMinutes();
+			var s =date.getSeconds();
+			var session="AM";
+
+			if (h ==0) {
+				h = 12;
+			}
+			if (h>12) {
+				h=h-12;
+				session="PM";
+			}
+			
+			
+			h = (h<10) ? "0" + h : h
+			m = (m<10) ? "0" + m :m;
+			s = (s<10) ? "0" + s :s;
+			
+			var time = h + ":" + m + ":" + s +" "+ session;
+			document .getElementById("MyClockDisplay").innerText = time;
+			document .getElementById("MyClockDisplay").textContent=time;
+
+			setTimeout(showTime,1000);
+		}
+		showTime();
+		
+	</script>	
+	<br>
+	<br>
+	
+		<button class="tablink" onclick="openPage('Home', this)">Potatoe</button>
+		<button class="tablink" onclick="openPage('News', this)" id="defaultOpen">Spinach</button>
+		<button class="tablink" onclick="openPage('Contact', this)">Peppers</button>
+		<button class="tablink" onclick="openPage('About', this)">Carbage</button>
+
+	<div id="Home" class="tabcontent" style=background-image:url('Images/potatoe.jpg')>
+	
+	<h2>HOW TO GROW POTATOES</h2>
+	
+	
+		<video width="600" height="300" controls>
+			<source src="Videos/pot.mp4" type="video/ogg">
+		</video>
+	</div>
+
+	<div id="News" class="tabcontent" style=background-image:url('Images/spinach.jpg')>
+	<h2>HOW TO GROW SPINACH</h2>
+ 		<video width="600" height="300" controls>
+			<source src="Videos/spinach.mp4" type="video/ogg">
+		</video>
+	</div>
+
+	<div id="Contact" class="tabcontent" style=background-image:url('Images/peppers.jpg')>
+	<h2>HOW TO GROW PEPPERS</h2>
+  		<video width="600" height="300" controls>
+			<source src="Videos/peppers.mp4" type="video/ogg">
+		</video>
+	</div>
+
+	<div id="About" class="tabcontent" style=background-image:url('Images/carbage.jpg')>
+	<h2>HOW TO GROW CARBAGE</h2>
+  		<video width="600" height="300" controls>
+			<source src="Videos/cabbage.mp4" type="video/ogg">
+		</video>
+	</div>
+		
+		<div class="text">
+			<h3>Beginners Guide To Compact John Deere Tractors: With Prices</h3>
+			<p>When it comes to family farms, hobby farms or any smaller acreage operation you might have, a dependable tractor is a true lifesaver. For us part timers and first timers, a small sub-compact or compact tractor is all we need. Whether your tending to your cattle or livestock like myself, or just trying to keep the yard looking clean, a tractor is your workhorse, so choose wisely.</p>
+		</div>
+		<div class="text">
+			<h3>We’re Growing</h3>
+			<p>Home & Farming is just getting started.  We have great plans for the upcoming months, and we’ll be bringing you more information on things like kitchens and baths, back yards, decorating for all seasons, farm implements, labor-saving devices and things that even we haven’t thought of yet!</p>
+		</div>
+	<br>
+	<br>
+		<button class="button"><a href="startJ.php" style="color:white">START YOUR JOURNEY</a></button>
+	<script src="JS/landingScript.js"></script>
+	<br>
+	<br>
+	<br>
+	<! -- footer -->
+<div class="footer">
+		<div class="footer-content">
+			<div class="footer-section About"></div>
+			<div class="footer-section links"></div>
+			<div class="footer-section contact-form"></div>
+		</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Company</h4>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Our services</a></li>
+						<li><a href="#">Private policy</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>get help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Order status</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>My Agri</h4>
+					<ul>
+						<li><a href="#">Peppers</a></li>
+						<li><a href="#">Potatoes</a></li>
+						<li><a href="#">Spinach</a></li>
+						<li><a href="#">Cabbage</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>			
+</body>
+</html>
